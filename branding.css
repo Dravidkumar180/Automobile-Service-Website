@@ -1,0 +1,30 @@
+/* Shared Stackly branding; retain the supplied logo's proportions. */
+.brand .stackly-logo,.stackly-logo{display:block;width:220px;height:auto;max-width:100%;object-fit:contain;flex-shrink:0}.nav>.brand{gap:0;flex-shrink:0}.footer-brand .brand{gap:0}.footer-brand .stackly-logo{width:240px;filter:brightness(0) invert(1)}.footer-brand p{margin-left:0}.welcome-brand .stackly-logo{width:280px;filter:brightness(0) invert(1)}.sidebar .logo{padding-inline:24px}.sidebar .logo .stackly-logo{width:190px;filter:brightness(0) invert(1)}
+@media(max-width:1150px){.nav .stackly-logo{width:185px}}
+@media(max-width:560px){.nav .stackly-logo{width:140px}.footer-brand .stackly-logo{width:210px}.welcome-brand{flex-wrap:wrap}.welcome-brand .stackly-logo{width:185px}.welcome-brand span{white-space:normal}}
+@media(max-width:360px){.nav .stackly-logo{width:118px}}
+.footer-brand .stackly-address{font-style:normal;font-size:14px;line-height:1.8;color:#afc1cc;margin-top:14px;max-width:310px;overflow-wrap:anywhere}.location-address{font-style:normal;font-size:15px;line-height:1.8;color:#637784}@media(max-width:560px){.footer-brand .stackly-address{font-size:13px;max-width:290px}}
+
+/* Align the footer address to the artwork, excluding the PNG's empty margins. */
+.footer-grid .footer-brand{align-self:start;width:260px;max-width:100%;min-width:0}
+.footer-brand .brand{position:relative;display:block;width:240px;max-width:100%;aspect-ratio:900 / 270;overflow:hidden}
+.footer-brand .brand .stackly-logo{position:absolute;width:105.667%;max-width:none;height:auto;left:-3.333%;top:-24.074%;margin:0}
+.footer-brand .stackly-address{width:100%;max-width:none;margin:16px 0 0;padding:0;font-size:13px;line-height:1.85;text-align:left;letter-spacing:0}
+@media(max-width:1150px){.footer-grid .footer-brand{width:230px}.footer-brand .brand{width:220px}.footer-brand .stackly-address{font-size:12px}}
+@media(max-width:560px){.footer-grid .footer-brand{width:260px}.footer-brand .brand{width:210px}.footer-brand .stackly-address{font-size:13px;margin-top:14px}}
+
+/* Consistent footer contact buttons, independent of text glyph metrics. */
+.footer-grid .footer-social{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:14px;padding-top:0;align-self:start}
+.footer-grid .footer-social a{display:flex!important;align-items:center;justify-content:center;width:42px;height:42px;min-width:42px;flex:0 0 42px;padding:0;margin:0!important;line-height:1;border:1px solid #ffffff35;border-radius:50%;color:#ffb18a;transition:background .2s,border-color .2s}
+.footer-grid .footer-social a svg{display:block;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.footer-grid .footer-social a:hover{background:#ffffff10;border-color:#ffb18a}
+@media(max-width:850px){.footer-grid .footer-social{flex-direction:row;justify-content:flex-start}}
+
+/* Keep each contact icon attached to its own clickable contact detail. */
+.footer-grid{grid-template-columns:1.2fr .7fr 1.35fr}
+.footer-grid .contact .footer-contact-link{display:flex;align-items:center;gap:12px;line-height:1.6;max-width:100%;font-size:16px}
+.footer-contact-link svg{width:20px;height:20px;flex:0 0 20px;color:#ffb18a;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.footer-contact-link span{min-width:0;overflow-wrap:anywhere}
+@media(max-width:850px){.footer-grid{grid-template-columns:1fr 1fr}.footer-grid .contact .footer-contact-link{font-size:14px;gap:9px}}
+@media(max-width:560px){.footer-grid{grid-template-columns:.7fr 1.3fr}.footer-grid .contact .footer-contact-link{font-size:12px;gap:7px}.footer-contact-link svg{width:17px;height:17px;flex-basis:17px}}
+@media(max-width:360px){.footer-grid{grid-template-columns:1fr}}

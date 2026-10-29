@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2515ff">
+  <title>Register | Stackly</title>
+  <link rel="stylesheet" href="auth.css">
+  <link rel="stylesheet" href="auth-layout.css">
+<link rel="stylesheet" href="branding.css"></head>
+<body data-auth-mode="signup">
+  <svg class="definitions" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="lock" viewBox="0 0 24 24"><path d="M7 11V7a5 5 0 0 1 10 0v4"/><rect x="4" y="10" width="16" height="12" rx="2"/><path d="M12 14v4"/></symbol>
+    <symbol id="eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  </defs></svg>
+  <div class="auth-layout">
+  <aside class="welcome-panel" aria-label="Welcome to Stackly">
+    <div class="welcome-content">
+      <a class="welcome-brand" href="index.html" aria-label="Stackly home"><img class="stackly-logo" src="assets/stackly-logo.png" alt="Stackly" width="951" height="395"><span>Drive Better. Stay Longer.</span></a>
+      <h2>Welcome to Stackly!</h2>
+      <p>Create your account to access our<br class="welcome-break"> services and manage your vehicle.</p>
+      <ul><li>Book Services &amp; Repairs</li><li>Buy Genuine Parts</li><li>Track Orders</li><li>Manage Your Vehicle</li></ul>
+    </div>
+  </aside>
+  <main class="auth-page">
+    <a class="back-link" href="index.html">&#8592; Back to Stackly</a>
+    <h1 id="heading">Create Account</h1>
+    <p class="intro" id="intro">Register with your email and a new password</p>
+    <form id="auth-form">
+      <div class="field"><label for="full-name">Full name</label><div class="input-shell"><input id="full-name" name="name" autocomplete="name" placeholder="Enter your full name" maxlength="80" required></div></div>
+      <div class="field"><label for="email">Email Address</label><div class="input-shell"><span class="field-icon"><svg><use href="#mail"/></svg></span><input id="email" name="email" type="email" placeholder="Enter your email address" autocomplete="email" required></div></div>
+      <div class="field" id="password-field"><label for="password">Password</label><div class="input-shell"><span class="field-icon"><svg><use href="#lock"/></svg></span><input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required><button class="visibility" id="toggle-password" type="button" aria-label="Show password" aria-pressed="false"><svg><use href="#eye"/></svg></button></div></div>
+      <div class="options" id="options" hidden><label class="remember"><input id="remember" type="checkbox" checked> <span>Remember me</span></label><a href="signin.html?mode=reset" id="forgot">Forgot password?</a></div>
+      <div class="field"><label for="confirm-password">Confirm password</label><div class="input-shell"><input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Re-enter your password" required></div></div>
+      <button class="primary" id="submit-button" type="submit">Create Account</button>
+      <p class="status" id="status" role="status" hidden></p>
+    </form>
+    <p class="create-account"><span id="account-prompt">Already have an account?</span><a id="account-link" href="signin.html">Sign In</a></p>
+  </main>
+  </div>
+  <script src="auth.js"></script>
+</body>
+</html>
